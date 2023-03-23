@@ -1,6 +1,8 @@
 # Unity Lights LOD (Level of Detail) System [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat)](http://mit-license.org)
 A Unity runtime system to downgrade light quality (all the way to completely disabling them or downgrading shadow quality) as the camera gets further. 
 
+**[THIS TOOL IS CURRENTLY NOT FUNCTIONAL, DO NOT USE]**
+
 (TODO: screenshot will be added here)
 
 *  *  *  *  *
@@ -38,7 +40,7 @@ The repository is at: https://github.com/razluta/UnityLightsLodSystem.git
 *  *  *  *  *
 
 ## Dependencies
-While the tool has *no dependencies* outside of the core Unity Editor and Engine, I recommend using the [Unity Lights Audit Tool](https://github.com/razluta/UnityLightsAuditTool) to first sort the lights in the scene. 
+While the tool has **no dependencies** outside of the core Unity Editor and Engine, I recommend using the [Unity Lights Audit Tool](https://github.com/razluta/UnityLightsAuditTool) to first sort the lights in the scene. 
 
 *  *  *  *  *
 
