@@ -44,7 +44,7 @@ The repository is at: https://github.com/razluta/UnityLightsLodSystem.git
 
 ## Contributing
 
-If you would like to contribute to the Unity Lights Auditor Tool, please:
+If you would like to contribute to the Unity Lights LOD System, please:
 
 1. Fork the repository
 2. Create a new branch
