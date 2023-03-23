@@ -37,6 +37,11 @@ The repository is at: https://github.com/razluta/UnityLightsLodSystem.git
 
 *  *  *  *  *
 
+## Dependencies
+While the tool has *no dependencies* outside of the core Unity Editor and Engine, I recommend using the [Unity Lights Audit Tool](https://github.com/razluta/UnityLightsAuditTool) to first sort the lights in the scene. 
+
+*  *  *  *  *
+
 ## Using the tool
 (TODO: add details)
 
