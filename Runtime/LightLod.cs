@@ -14,15 +14,18 @@ namespace UnityLightsLodSystem.Runtime
         private Transform _transform;
         private int _lodCount;
 
-        public void UpdateLightOptimizations(Transform cameraTransform)
+        public void UpdateLightOptimizations(Camera activeCamera, Transform cameraTransform)
         {
-            UpdateLightCulling(cameraTransform);
             UpdateLightParametersBasedOnLod(cameraTransform);
+            UpdateLightCulling(activeCamera, cameraTransform);
         }
 
-        private void UpdateLightCulling(Transform cameraTransform)
+        private void UpdateLightCulling(Camera activeCamera, Transform cameraTransform)
         {
-            // TODO: Add frustum based light culling
+            // Frustum based light culling
+            Bounds lightBounds = new Bounds(_transform.position, Vector3.one * (_lightRangeOfInfluence * 2f));
+            Plane[] frustumPlanes = GeometryUtility.CalculateFrustumPlanes(activeCamera);
+            _light.enabled = GeometryUtility.TestPlanesAABB(frustumPlanes, lightBounds);
         }
 
         private void UpdateLightParametersBasedOnLod(Transform cameraTransform)

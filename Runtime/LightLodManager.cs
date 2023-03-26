@@ -31,7 +31,7 @@ namespace UnityLightsLodSystem.Runtime
             
             foreach (var lightLod in _lightLods)
             {
-                lightLod.UpdateLightOptimizations(_cameraTransform);
+                lightLod.UpdateLightOptimizations(_camera, _cameraTransform);
             }
             
             Profiler.EndSample();
