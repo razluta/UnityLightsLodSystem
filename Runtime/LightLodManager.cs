@@ -5,9 +5,13 @@ namespace UnityLightsLodSystem.Runtime
 {
     public class LightLodManager : MonoBehaviour
     {
+        [Header("How often to update the lights (seconds)")]
+        public float updateRate = 0.1f;
+        
         private Camera _camera;
         private Transform _cameraTransform;
         private LightLod[] _lightLods;
+        private float _timeElapsed;
 
         private void Awake()
         {
@@ -18,23 +22,30 @@ namespace UnityLightsLodSystem.Runtime
         {
             _camera = Camera.main;
             _cameraTransform = _camera.transform;
+            _timeElapsed = 0;
         }
 
         private void Update()
         {
-            UpdateLightOptimizations();
+            Profiler.BeginSample("UpdateLightOptimizations");
+            
+            _timeElapsed += Time.deltaTime;
+            if (_timeElapsed > updateRate)
+            {
+                UpdateLightOptimizations();
+            }
+            
+            Profiler.EndSample();
         }
 
         private void UpdateLightOptimizations()
         {
-            Profiler.BeginSample("UpdateLightOptimizations");
-            
             foreach (var lightLod in _lightLods)
             {
                 lightLod.UpdateLightOptimizations(_camera, _cameraTransform);
             }
-            
-            Profiler.EndSample();
+
+            _timeElapsed = 0;
         }
 
     }

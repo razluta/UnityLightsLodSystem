@@ -13,22 +13,24 @@ namespace UnityLightsLodSystem.Runtime
         private float _lightRangeOfInfluence;
         private Transform _transform;
         private int _lodCount;
+        private bool _isLightCulled;
 
         public void UpdateLightOptimizations(Camera activeCamera, Transform cameraTransform)
         {
-            UpdateLightParametersBasedOnLod(cameraTransform);
-            UpdateLightCulling(activeCamera, cameraTransform);
+            UpdateLightCulling(activeCamera);
+            if (!_isLightCulled)
+            {
+                UpdateLightParametersBasedOnLod(cameraTransform);
+            }
         }
 
-        private void UpdateLightCulling(Camera activeCamera, Transform cameraTransform)
+        private void UpdateLightCulling(Camera activeCamera)
         {
             // Frustum based light culling
             Bounds lightBounds = new Bounds(_transform.position, Vector3.one * (_lightRangeOfInfluence * 2f));
             Plane[] frustumPlanes = GeometryUtility.CalculateFrustumPlanes(activeCamera);
-            if (_light.enabled)
-            {
-                _light.enabled = GeometryUtility.TestPlanesAABB(frustumPlanes, lightBounds);
-            }
+            _isLightCulled = !GeometryUtility.TestPlanesAABB(frustumPlanes, lightBounds);
+            _light.enabled = !_isLightCulled;
         }
 
         private void UpdateLightParametersBasedOnLod(Transform cameraTransform)
@@ -69,6 +71,7 @@ namespace UnityLightsLodSystem.Runtime
         {
             _light = GetComponent<Light>();
             _transform = _light.transform;
+            _isLightCulled = false;
 
             foreach (var lightLevelOfDetail in lightLods)
             {
