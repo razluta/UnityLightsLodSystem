@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 1083484}
   - component: {fileID: 1083486}
   - component: {fileID: 1083485}
+  - component: {fileID: 1083487}
   m_Layer: 0
   m_Name: Point Light (7)
   m_TagString: Untagged
@@ -154,7 +155,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 823730615}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1083485
 MonoBehaviour:
@@ -238,6 +239,34 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1083487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1083483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightLods:
+  - minDistance: 10
+    maxDistance: 20
+    shadowType: 2
+    shadowResolution: 2
+    debugColor: {r: 1, g: 0, b: 0, a: 0}
+  - minDistance: 20
+    maxDistance: 30
+    shadowType: 1
+    shadowResolution: 1
+    debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
+  - minDistance: 30
+    maxDistance: 40
+    shadowType: 0
+    shadowResolution: 0
+    debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
 --- !u!1 &54148152
 GameObject:
   m_ObjectHideFlags: 0
@@ -249,6 +278,7 @@ GameObject:
   - component: {fileID: 54148153}
   - component: {fileID: 54148154}
   - component: {fileID: 54148155}
+  - component: {fileID: 54148156}
   m_Layer: 0
   m_Name: Point Light (14)
   m_TagString: Untagged
@@ -269,7 +299,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 823730615}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &54148154
 Light:
@@ -353,6 +383,34 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!114 &54148156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 54148152}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightLods:
+  - minDistance: 10
+    maxDistance: 20
+    shadowType: 2
+    shadowResolution: 2
+    debugColor: {r: 1, g: 0, b: 0, a: 0}
+  - minDistance: 20
+    maxDistance: 30
+    shadowType: 1
+    shadowResolution: 1
+    debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
+  - minDistance: 30
+    maxDistance: 40
+    shadowType: 0
+    shadowResolution: 0
+    debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
 --- !u!1 &79321873
 GameObject:
   m_ObjectHideFlags: 0
@@ -833,7 +891,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.2
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1407,6 +1465,7 @@ GameObject:
   - component: {fileID: 430493417}
   - component: {fileID: 430493419}
   - component: {fileID: 430493418}
+  - component: {fileID: 430493420}
   m_Layer: 0
   m_Name: Point Light (2)
   m_TagString: Untagged
@@ -1427,7 +1486,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 823730615}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &430493418
 MonoBehaviour:
@@ -1511,6 +1570,34 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &430493420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 430493416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightLods:
+  - minDistance: 10
+    maxDistance: 20
+    shadowType: 2
+    shadowResolution: 2
+    debugColor: {r: 1, g: 0, b: 0, a: 0}
+  - minDistance: 20
+    maxDistance: 30
+    shadowType: 1
+    shadowResolution: 1
+    debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
+  - minDistance: 30
+    maxDistance: 40
+    shadowType: 0
+    shadowResolution: 0
+    debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
 --- !u!1 &449496091
 GameObject:
   m_ObjectHideFlags: 0
@@ -2269,6 +2356,7 @@ GameObject:
   - component: {fileID: 700102006}
   - component: {fileID: 700102008}
   - component: {fileID: 700102007}
+  - component: {fileID: 700102009}
   m_Layer: 0
   m_Name: Point Light (9)
   m_TagString: Untagged
@@ -2289,7 +2377,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 823730615}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &700102007
 MonoBehaviour:
@@ -2373,6 +2461,34 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &700102009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700102005}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightLods:
+  - minDistance: 10
+    maxDistance: 20
+    shadowType: 2
+    shadowResolution: 2
+    debugColor: {r: 1, g: 0, b: 0, a: 0}
+  - minDistance: 20
+    maxDistance: 30
+    shadowType: 1
+    shadowResolution: 1
+    debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
+  - minDistance: 30
+    maxDistance: 40
+    shadowType: 0
+    shadowResolution: 0
+    debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
 --- !u!1 &705014018
 GameObject:
   m_ObjectHideFlags: 0
@@ -2550,6 +2666,7 @@ GameObject:
   - component: {fileID: 728134281}
   - component: {fileID: 728134283}
   - component: {fileID: 728134282}
+  - component: {fileID: 728134284}
   m_Layer: 0
   m_Name: Point Light (8)
   m_TagString: Untagged
@@ -2570,7 +2687,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 823730615}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &728134282
 MonoBehaviour:
@@ -2654,6 +2771,34 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &728134284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728134280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightLods:
+  - minDistance: 10
+    maxDistance: 20
+    shadowType: 2
+    shadowResolution: 2
+    debugColor: {r: 1, g: 0, b: 0, a: 0}
+  - minDistance: 20
+    maxDistance: 30
+    shadowType: 1
+    shadowResolution: 1
+    debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
+  - minDistance: 30
+    maxDistance: 40
+    shadowType: 0
+    shadowResolution: 0
+    debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
 --- !u!1 &760645009
 GameObject:
   m_ObjectHideFlags: 0
@@ -2935,7 +3080,7 @@ Transform:
   - {fileID: 157237432}
   - {fileID: 1487428602}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &808396288
 GameObject:
@@ -2948,6 +3093,7 @@ GameObject:
   - component: {fileID: 808396289}
   - component: {fileID: 808396291}
   - component: {fileID: 808396290}
+  - component: {fileID: 808396292}
   m_Layer: 0
   m_Name: Point Light (6)
   m_TagString: Untagged
@@ -2968,7 +3114,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 823730615}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &808396290
 MonoBehaviour:
@@ -3052,6 +3198,34 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &808396292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 808396288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightLods:
+  - minDistance: 10
+    maxDistance: 20
+    shadowType: 2
+    shadowResolution: 2
+    debugColor: {r: 1, g: 0, b: 0, a: 0}
+  - minDistance: 20
+    maxDistance: 30
+    shadowType: 1
+    shadowResolution: 1
+    debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
+  - minDistance: 30
+    maxDistance: 40
+    shadowType: 0
+    shadowResolution: 0
+    debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
 --- !u!1 &823730614
 GameObject:
   m_ObjectHideFlags: 0
@@ -3082,6 +3256,7 @@ Transform:
   m_Children:
   - {fileID: 203844589}
   - {fileID: 1464188861}
+  - {fileID: 1072914564}
   - {fileID: 1154787557}
   - {fileID: 430493417}
   - {fileID: 1350499778}
@@ -3098,7 +3273,7 @@ Transform:
   - {fileID: 54148153}
   - {fileID: 1295902162}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &834303305
 GameObject:
@@ -3443,6 +3618,7 @@ GameObject:
   - component: {fileID: 931197417}
   - component: {fileID: 931197419}
   - component: {fileID: 931197418}
+  - component: {fileID: 931197420}
   m_Layer: 0
   m_Name: Point Light (10)
   m_TagString: Untagged
@@ -3463,7 +3639,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 823730615}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &931197418
 MonoBehaviour:
@@ -3547,6 +3723,34 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &931197420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931197416}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightLods:
+  - minDistance: 10
+    maxDistance: 20
+    shadowType: 2
+    shadowResolution: 2
+    debugColor: {r: 1, g: 0, b: 0, a: 0}
+  - minDistance: 20
+    maxDistance: 30
+    shadowType: 1
+    shadowResolution: 1
+    debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
+  - minDistance: 30
+    maxDistance: 40
+    shadowType: 0
+    shadowResolution: 0
+    debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
 --- !u!1 &961739749
 GameObject:
   m_ObjectHideFlags: 0
@@ -3658,7 +3862,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 961739749}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalPosition: {x: 0, y: 2.48, z: -5.65}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3676,6 +3880,7 @@ GameObject:
   - component: {fileID: 1070874124}
   - component: {fileID: 1070874125}
   - component: {fileID: 1070874126}
+  - component: {fileID: 1070874127}
   m_Layer: 0
   m_Name: Point Light (13)
   m_TagString: Untagged
@@ -3696,7 +3901,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 823730615}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &1070874125
 Light:
@@ -3780,6 +3985,149 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!114 &1070874127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1070874123}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightLods:
+  - minDistance: 10
+    maxDistance: 20
+    shadowType: 2
+    shadowResolution: 2
+    debugColor: {r: 1, g: 0, b: 0, a: 0}
+  - minDistance: 20
+    maxDistance: 30
+    shadowType: 1
+    shadowResolution: 1
+    debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
+  - minDistance: 30
+    maxDistance: 40
+    shadowType: 0
+    shadowResolution: 0
+    debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
+--- !u!1 &1072914563
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1072914564}
+  - component: {fileID: 1072914566}
+  - component: {fileID: 1072914565}
+  m_Layer: 0
+  m_Name: Spot Light
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1072914564
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072914563}
+  m_LocalRotation: {x: 0.213078, y: -0, z: -0, w: 0.9770352}
+  m_LocalPosition: {x: 0, y: 5.69, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 823730615}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 24.606, y: 0, z: 0}
+--- !u!114 &1072914565
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072914563}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+--- !u!108 &1072914566
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1072914563}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 0
+  m_Shape: 0
+  m_Color: {r: 1, g: 0.6131911, b: 0, a: 1}
+  m_Intensity: 484
+  m_Range: 15
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &1114102209
 GameObject:
   m_ObjectHideFlags: 0
@@ -3874,6 +4222,7 @@ GameObject:
   - component: {fileID: 1154787557}
   - component: {fileID: 1154787559}
   - component: {fileID: 1154787558}
+  - component: {fileID: 1154787560}
   m_Layer: 0
   m_Name: Point Light (1)
   m_TagString: Untagged
@@ -3894,7 +4243,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 823730615}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1154787558
 MonoBehaviour:
@@ -3978,6 +4327,34 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1154787560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154787556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightLods:
+  - minDistance: 10
+    maxDistance: 20
+    shadowType: 2
+    shadowResolution: 2
+    debugColor: {r: 1, g: 0, b: 0, a: 0}
+  - minDistance: 20
+    maxDistance: 30
+    shadowType: 1
+    shadowResolution: 1
+    debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
+  - minDistance: 30
+    maxDistance: 40
+    shadowType: 0
+    shadowResolution: 0
+    debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
 --- !u!1 &1160234425
 GameObject:
   m_ObjectHideFlags: 0
@@ -4025,7 +4402,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1172474428
 GameObject:
@@ -4121,6 +4498,7 @@ GameObject:
   - component: {fileID: 1203285207}
   - component: {fileID: 1203285209}
   - component: {fileID: 1203285208}
+  - component: {fileID: 1203285210}
   m_Layer: 0
   m_Name: Point Light (12)
   m_TagString: Untagged
@@ -4141,7 +4519,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 823730615}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1203285208
 MonoBehaviour:
@@ -4225,6 +4603,34 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1203285210
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1203285206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightLods:
+  - minDistance: 10
+    maxDistance: 20
+    shadowType: 2
+    shadowResolution: 2
+    debugColor: {r: 1, g: 0, b: 0, a: 0}
+  - minDistance: 20
+    maxDistance: 30
+    shadowType: 1
+    shadowResolution: 1
+    debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
+  - minDistance: 30
+    maxDistance: 40
+    shadowType: 0
+    shadowResolution: 0
+    debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
 --- !u!1 &1245497948
 GameObject:
   m_ObjectHideFlags: 0
@@ -4402,6 +4808,7 @@ GameObject:
   - component: {fileID: 1287797870}
   - component: {fileID: 1287797872}
   - component: {fileID: 1287797871}
+  - component: {fileID: 1287797873}
   m_Layer: 0
   m_Name: Point Light (5)
   m_TagString: Untagged
@@ -4422,7 +4829,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 823730615}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1287797871
 MonoBehaviour:
@@ -4506,6 +4913,34 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1287797873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287797869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightLods:
+  - minDistance: 10
+    maxDistance: 20
+    shadowType: 2
+    shadowResolution: 2
+    debugColor: {r: 1, g: 0, b: 0, a: 0}
+  - minDistance: 20
+    maxDistance: 30
+    shadowType: 1
+    shadowResolution: 1
+    debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
+  - minDistance: 30
+    maxDistance: 40
+    shadowType: 0
+    shadowResolution: 0
+    debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
 --- !u!1 &1295902161
 GameObject:
   m_ObjectHideFlags: 0
@@ -4517,6 +4952,7 @@ GameObject:
   - component: {fileID: 1295902162}
   - component: {fileID: 1295902163}
   - component: {fileID: 1295902164}
+  - component: {fileID: 1295902165}
   m_Layer: 0
   m_Name: Point Light (15)
   m_TagString: Untagged
@@ -4537,7 +4973,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 823730615}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &1295902163
 Light:
@@ -4621,6 +5057,34 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!114 &1295902165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1295902161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightLods:
+  - minDistance: 10
+    maxDistance: 20
+    shadowType: 2
+    shadowResolution: 2
+    debugColor: {r: 1, g: 0, b: 0, a: 0}
+  - minDistance: 20
+    maxDistance: 30
+    shadowType: 1
+    shadowResolution: 1
+    debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
+  - minDistance: 30
+    maxDistance: 40
+    shadowType: 0
+    shadowResolution: 0
+    debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
 --- !u!1 &1317048714
 GameObject:
   m_ObjectHideFlags: 0
@@ -4715,6 +5179,7 @@ GameObject:
   - component: {fileID: 1350499778}
   - component: {fileID: 1350499780}
   - component: {fileID: 1350499779}
+  - component: {fileID: 1350499781}
   m_Layer: 0
   m_Name: Point Light (3)
   m_TagString: Untagged
@@ -4735,7 +5200,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 823730615}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1350499779
 MonoBehaviour:
@@ -4819,6 +5284,34 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1350499781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1350499777}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightLods:
+  - minDistance: 10
+    maxDistance: 20
+    shadowType: 2
+    shadowResolution: 2
+    debugColor: {r: 1, g: 0, b: 0, a: 0}
+  - minDistance: 20
+    maxDistance: 30
+    shadowType: 1
+    shadowResolution: 1
+    debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
+  - minDistance: 30
+    maxDistance: 40
+    shadowType: 0
+    shadowResolution: 0
+    debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
 --- !u!1 &1371426167
 GameObject:
   m_ObjectHideFlags: 0
@@ -5328,6 +5821,7 @@ GameObject:
   - component: {fileID: 1411970384}
   - component: {fileID: 1411970386}
   - component: {fileID: 1411970385}
+  - component: {fileID: 1411970387}
   m_Layer: 0
   m_Name: Point Light (4)
   m_TagString: Untagged
@@ -5348,7 +5842,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 823730615}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1411970385
 MonoBehaviour:
@@ -5432,6 +5926,34 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1411970387
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1411970383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightLods:
+  - minDistance: 10
+    maxDistance: 20
+    shadowType: 2
+    shadowResolution: 2
+    debugColor: {r: 1, g: 0, b: 0, a: 0}
+  - minDistance: 20
+    maxDistance: 30
+    shadowType: 1
+    shadowResolution: 1
+    debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
+  - minDistance: 30
+    maxDistance: 40
+    shadowType: 0
+    shadowResolution: 0
+    debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
 --- !u!1 &1453525971
 GameObject:
   m_ObjectHideFlags: 0
@@ -5526,6 +6048,7 @@ GameObject:
   - component: {fileID: 1464188861}
   - component: {fileID: 1464188863}
   - component: {fileID: 1464188862}
+  - component: {fileID: 1464188864}
   m_Layer: 0
   m_Name: Point Light
   m_TagString: Untagged
@@ -5579,9 +6102,9 @@ Light:
   serializedVersion: 10
   m_Type: 2
   m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 10
+  m_Color: {r: 0, g: 0.2386322, b: 1, a: 1}
+  m_Intensity: 63.99
+  m_Range: 15
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -5630,6 +6153,34 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1464188864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1464188860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightLods:
+  - minDistance: 10
+    maxDistance: 20
+    shadowType: 2
+    shadowResolution: 2
+    debugColor: {r: 1, g: 0, b: 0, a: 0}
+  - minDistance: 20
+    maxDistance: 30
+    shadowType: 1
+    shadowResolution: 1
+    debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
+  - minDistance: 30
+    maxDistance: 40
+    shadowType: 0
+    shadowResolution: 0
+    debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
 --- !u!1 &1487428601
 GameObject:
   m_ObjectHideFlags: 0
@@ -6560,6 +7111,7 @@ GameObject:
   - component: {fileID: 1703529118}
   - component: {fileID: 1703529120}
   - component: {fileID: 1703529119}
+  - component: {fileID: 1703529121}
   m_Layer: 0
   m_Name: Point Light (11)
   m_TagString: Untagged
@@ -6580,7 +7132,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 823730615}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1703529119
 MonoBehaviour:
@@ -6664,6 +7216,34 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1703529121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703529117}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lightLods:
+  - minDistance: 10
+    maxDistance: 20
+    shadowType: 2
+    shadowResolution: 2
+    debugColor: {r: 1, g: 0, b: 0, a: 0}
+  - minDistance: 20
+    maxDistance: 30
+    shadowType: 1
+    shadowResolution: 1
+    debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
+  - minDistance: 30
+    maxDistance: 40
+    shadowType: 0
+    shadowResolution: 0
+    debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
 --- !u!1 &1776588572
 GameObject:
   m_ObjectHideFlags: 0
@@ -7411,3 +7991,72 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2136329853}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &8378914601997926313
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1481323701026983468, guid: f11a7cc43fb3d5c47baac3d75c01329d,
+        type: 3}
+      propertyPath: m_Name
+      value: LightLodManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358893211105022575, guid: f11a7cc43fb3d5c47baac3d75c01329d,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358893211105022575, guid: f11a7cc43fb3d5c47baac3d75c01329d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358893211105022575, guid: f11a7cc43fb3d5c47baac3d75c01329d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358893211105022575, guid: f11a7cc43fb3d5c47baac3d75c01329d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358893211105022575, guid: f11a7cc43fb3d5c47baac3d75c01329d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358893211105022575, guid: f11a7cc43fb3d5c47baac3d75c01329d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358893211105022575, guid: f11a7cc43fb3d5c47baac3d75c01329d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358893211105022575, guid: f11a7cc43fb3d5c47baac3d75c01329d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358893211105022575, guid: f11a7cc43fb3d5c47baac3d75c01329d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358893211105022575, guid: f11a7cc43fb3d5c47baac3d75c01329d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2358893211105022575, guid: f11a7cc43fb3d5c47baac3d75c01329d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: f11a7cc43fb3d5c47baac3d75c01329d, type: 3}
