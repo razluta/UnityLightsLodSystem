@@ -25,7 +25,10 @@ namespace UnityLightsLodSystem.Runtime
             // Frustum based light culling
             Bounds lightBounds = new Bounds(_transform.position, Vector3.one * (_lightRangeOfInfluence * 2f));
             Plane[] frustumPlanes = GeometryUtility.CalculateFrustumPlanes(activeCamera);
-            _light.enabled = GeometryUtility.TestPlanesAABB(frustumPlanes, lightBounds);
+            if (_light.enabled)
+            {
+                _light.enabled = GeometryUtility.TestPlanesAABB(frustumPlanes, lightBounds);
+            }
         }
 
         private void UpdateLightParametersBasedOnLod(Transform cameraTransform)
