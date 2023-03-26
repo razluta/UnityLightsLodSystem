@@ -1,9 +1,10 @@
 # Unity Lights LOD (Level of Detail) System [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat)](http://mit-license.org)
-A Unity runtime system to downgrade light quality (all the way to completely disabling them or downgrading shadow quality) as the camera gets further. 
+A Unity runtime system to downgrade light quality (all the way to completely disabling them or downgrading shadow quality) as the camera gets further in order to improve performance. 
 
-**[THIS TOOL IS CURRENTLY NOT FUNCTIONAL, DO NOT USE]**
+![](/Screenshots/UnityLightsLodSystem_screenshot01.gif)
 
-(TODO: screenshot will be added here)
+The tool has been verified on the following versions of Unity:
+- 2022.2
 
 *  *  *  *  *
 
