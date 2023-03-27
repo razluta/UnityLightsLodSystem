@@ -26,7 +26,7 @@ To use the Unity Lights Lod System in your Unity project, simply:
 1. Clone or download the repository
 2. Import the `UnityLightsLodSystem` folder into your Unity project's `Assets` folder
 
-### Option B) Option B) Add the repository to the package manifest (go in YourProject/Packages/ and open the "manifest.json" file and add "com..." line in the depenencies section). If you don't have Git installed, Unity will require you to install it.
+### Option B) Add the repository to the package manifest (go in YourProject/Packages/ and open the "manifest.json" file and add "com..." line in the depenencies section). If you don't have Git installed, Unity will require you to install it.
 ```
 {
   "dependencies": {
@@ -47,7 +47,18 @@ While the tool has **no dependencies** outside of the core Unity Editor and Engi
 *  *  *  *  *
 
 ## Using the tool
-(TODO: add details)
+To implement the Unity Lights Lod System in your Unity project, simply:
+
+### Step 01 - Add the LightLodManager.prefab in your scene (or add the 'LightModManager.cs' script to an empty GameObject in your scene)
+You can simply drag the LightLodManager.prefab in your scene. The manager acts as a singleton. The main parameter in the UI is the Update Rate, which dictates how often the the LightLodManager will update LODs in the scene. By default, it is set to 0.1f, which means it will run try to run about 10 times per second.
+
+### Step 02 - For each light you want to LOD, add a LightLod.cs script in their GameObject
+The LightLod component will be the one to tell the manager what properties we want to LOD on each light.
+The "Is Disable After Last Lod" property will disable the light after the last LOD's max distance is surpassed. If the light should be visible at high distances, feel free to keep this flag disabled.
+Note: make sure the min and max distances are not overlapping otherwise you might experience unexpected behavior. Include as many LODs as you need.
+The screenshot below shows an LOD setup example. 
+
+![](/Screenshots/UnityLightsAuditTool_screenshot02.png)
 
 *  *  *  *  *
 
