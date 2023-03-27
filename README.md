@@ -65,7 +65,7 @@ The screenshot below shows an LOD setup example.
 *  *  *  *  *
 
 ## Special notes
-*Please note that I hightly recommend you only use the LOD component on Point and Spot lights. Any type of LODing optimizations would be very noticeable and jarring on other light types.*
+*Please note that I highly recommend you only use the LOD component on Point and Spot lights. Any type of LODing optimizations would be very noticeable and jarring on other light types.*
 
 *  *  *  *  *
 
