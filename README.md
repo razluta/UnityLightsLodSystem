@@ -4,7 +4,7 @@ A Unity runtime system to downgrade light (Point, Spot) quality (all the way to 
 ![](/Screenshots/UnityLightsLodSystem_screenshot01.gif)
 
 The tool has been verified on the following versions of Unity:
-- 2022.2
+- 2021.3 (LTS)
 
 *  *  *  *  *
 
