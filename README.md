@@ -1,5 +1,5 @@
 # Unity Lights LOD (Level of Detail) System [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat)](http://mit-license.org)
-A Unity runtime system to downgrade light (Point, Spot) quality (all the way to completely disabling them or downgrading shadow quality) as the camera gets further (and also based on frustuum) in order to improve performance. 
+A Unity runtime system to downgrade light (Point, Spot) quality (all the way to completely disabling them or downgrading shadow quality) as the camera gets further (and also based on frustum) in order to improve performance. 
 
 ![](/Screenshots/UnityLightsLodSystem_screenshot01.gif)
 
