@@ -69,6 +69,13 @@ The screenshot below shows an LOD setup example.
 
 *  *  *  *  *
 
+## Use-cases
+I recieved enough questions about why this is useful that I figured I would address it: in large dynamic worlds with many lights (especially small range, low intensity point lights), there's a not insignficant CPU cost to the calculating the lights (direct light influence, shadow casting, etc). This tool allows you to significantly reduce (possibly to completely eliminate on some lights, at certain distances) the calculations needed to be performed every frame.
+
+This project is most useful for large levels with many small lights, especially if there are objects blocking the player's line of sight (so they don't see the quality change or the light pop on or off). 
+
+*  *  *  *  *
+
 ## Contributing
 
 If you would like to contribute to the Unity Lights LOD System, please:
