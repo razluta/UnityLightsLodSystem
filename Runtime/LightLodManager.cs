@@ -7,14 +7,39 @@ namespace UnityLightsLodSystem.Runtime
     {
         [Header("How often to update the lights (seconds)")]
         public float updateRate = 0.1f;
+
+        private static LightLodManager _instance;
         
         private Camera _camera;
         private Transform _cameraTransform;
         private LightLod[] _lightLods;
         private float _timeElapsed;
 
+        public static LightLodManager Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = FindObjectOfType<LightLodManager>();
+                }
+
+                return _instance;
+            }
+        }
+
         private void Awake()
         {
+            if (_instance != null && _instance != this)
+            {
+                Destroy(this.gameObject);
+            }
+            else
+            {
+                _instance = this;
+                DontDestroyOnLoad(this.gameObject);
+            }
+            
             _lightLods = FindObjectsOfType<LightLod>();
         }
 

@@ -7,6 +7,7 @@ namespace UnityLightsLodSystem.Runtime
     [RequireComponent(typeof(Light))]
     public class LightLod : MonoBehaviour
     {
+        [SerializeField] public bool isDisableAfterLastLod = true;
         [SerializeField] public LightLevelOfDetail[] lightLods;
 
         private Light _light;
@@ -54,14 +55,14 @@ namespace UnityLightsLodSystem.Runtime
                     _light.shadowResolution = lightLods[i].shadowResolution;
                     
 #if UNITY_EDITOR
-                    // Change the color for debug purposes in the Unity Editor
+                    // Change the color for debug purposes in the Unity Editor only
                     _light.color = lightLods[i].debugColor;
 #endif
                 }
             }
             
             // Disable light if distance higher than the last LOD's max
-            if (sqrDistance >= lightLods[_lodCount - 1].MaxSqrDistance)
+            if (sqrDistance >= lightLods[_lodCount - 1].MaxSqrDistance && isDisableAfterLastLod)
             {
                 _light.enabled = false;
             }

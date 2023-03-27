@@ -1,0 +1,11 @@
+﻿{
+  "name": "com.razluta.unitylightslodsystem",
+  "version": "1.0.0",
+  "displayName": "Unity Lights LOD System",
+  "description": "Unity Lights LOD (Level of Detail) System [![License](https://img.shields.io/badge/License-MIT-lightgrey.svg?style=flat)](http://mit-license.org)\nA Unity runtime system to downgrade light (Point, Spot) quality (all the way to completely disabling them or downgrading shadow quality) as the camera gets further (and also based on frustum) in order to improve performance.",
+  "author": {
+    "name": "Razvan Luta",
+    "email": "contact@razluta.com",
+    "url": "www.razluta.com"
+  }
+}
