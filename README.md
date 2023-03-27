@@ -58,7 +58,7 @@ The "Is Disable After Last Lod" property will disable the light after the last L
 Note: make sure the min and max distances are not overlapping otherwise you might experience unexpected behavior. Include as many LODs as you need.
 The screenshot below shows an LOD setup example. 
 
-![](/Screenshots/UnityLightsAuditTool_screenshot02.png)
+![](/Screenshots/UnityLightsLodSystem_screenshot02.png)
 
 *  *  *  *  *
 
