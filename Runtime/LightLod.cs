@@ -8,6 +8,7 @@ namespace UnityLightsLodSystem.Runtime
     public class LightLod : MonoBehaviour
     {
         [SerializeField] public bool isDisableAfterLastLod = true;
+        [SerializeField] public float minDistanceFirstLod;
         [SerializeField] public LightLevelOfDetail[] lightLods;
 
         private Light _light;
@@ -15,6 +16,8 @@ namespace UnityLightsLodSystem.Runtime
         private Transform _transform;
         private int _lodCount;
         private bool _isLightCulled;
+        private float _minDistanceSqrFirstLod;
+        private LightLevelOfDetail _cachedLightSettings;
 
         public void UpdateLightOptimizations(Camera activeCamera, Transform cameraTransform)
         {
@@ -39,16 +42,30 @@ namespace UnityLightsLodSystem.Runtime
             var sqrDistance = TransformUtilities.GetSquaredDistanceFast(cameraTransform, _transform);
 
             // No light changes if the distance is less than determined by the LOD1
-            if (sqrDistance < lightLods[0].MinSqrDistance)
+            if (sqrDistance < _minDistanceSqrFirstLod)
             {
                 _light.enabled = true;
+                _light.shadows = _cachedLightSettings.shadowType;
+                _light.shadowResolution = _cachedLightSettings.shadowResolution;
+                    
+#if UNITY_EDITOR
+                // Change the color for debug purposes in the Unity Editor only
+                _light.color = _cachedLightSettings.debugColor;
+#endif
+                
                 return;
             }
-            
+
+            var previousLodMaxSquareDistance = _minDistanceSqrFirstLod;
             // Traversing and checking the LODs 1-X
             for (int i = 0; i < _lodCount; i++)
             {
-                if((sqrDistance >= lightLods[i].MinSqrDistance) && (sqrDistance < lightLods[i].MaxSqrDistance))
+                if (i > 0)
+                {
+                    previousLodMaxSquareDistance = lightLods[i - 1].MaxSqrDistance;
+                }
+                
+                if((sqrDistance >= previousLodMaxSquareDistance) && (sqrDistance < lightLods[i].MaxSqrDistance))
                 {
                     _light.enabled = true;
                     _light.shadows = lightLods[i].shadowType;
@@ -74,9 +91,9 @@ namespace UnityLightsLodSystem.Runtime
             _transform = _light.transform;
             _isLightCulled = false;
 
+            _minDistanceSqrFirstLod = minDistanceFirstLod * minDistanceFirstLod;
             foreach (var lightLevelOfDetail in lightLods)
             {
-                lightLevelOfDetail.MinSqrDistance = lightLevelOfDetail.minDistance * lightLevelOfDetail.minDistance;
                 lightLevelOfDetail.MaxSqrDistance = lightLevelOfDetail.maxDistance * lightLevelOfDetail.maxDistance;
             }
 
@@ -96,19 +113,25 @@ namespace UnityLightsLodSystem.Runtime
                 }
                     break;
             }
+
+            _cachedLightSettings = new LightLevelOfDetail()
+            {
+                maxDistance = minDistanceFirstLod,
+                shadowType = _light.shadows,
+                shadowResolution = _light.shadowResolution,
+                debugColor = _light.color
+            };
         }
     }
 
     [Serializable]
     public class LightLevelOfDetail
     {
-        [SerializeField] public float minDistance;
         [SerializeField] public float maxDistance;
         [SerializeField] public LightShadows shadowType;
         [SerializeField] public LightShadowResolution shadowResolution = LightShadowResolution.High;
         [SerializeField] public Color debugColor;
-
-        public float MinSqrDistance { get; set; }
+        
         public float MaxSqrDistance { get; set; }
     }
 }

@@ -251,19 +251,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDisableAfterLastLod: 1
+  minDistanceFirstLod: 0
   lightLods:
-  - minDistance: 10
-    maxDistance: 20
+  - maxDistance: 20
     shadowType: 2
     shadowResolution: 2
     debugColor: {r: 1, g: 0, b: 0, a: 0}
-  - minDistance: 20
-    maxDistance: 30
+  - maxDistance: 30
     shadowType: 1
     shadowResolution: 1
     debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
-  - minDistance: 30
-    maxDistance: 40
+  - maxDistance: 40
     shadowType: 0
     shadowResolution: 0
     debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
@@ -395,19 +394,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDisableAfterLastLod: 1
+  minDistanceFirstLod: 0
   lightLods:
-  - minDistance: 10
-    maxDistance: 20
+  - maxDistance: 20
     shadowType: 2
     shadowResolution: 2
     debugColor: {r: 1, g: 0, b: 0, a: 0}
-  - minDistance: 20
-    maxDistance: 30
+  - maxDistance: 30
     shadowType: 1
     shadowResolution: 1
     debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
-  - minDistance: 30
-    maxDistance: 40
+  - maxDistance: 40
     shadowType: 0
     shadowResolution: 0
     debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
@@ -1582,19 +1580,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDisableAfterLastLod: 1
+  minDistanceFirstLod: 0
   lightLods:
-  - minDistance: 10
-    maxDistance: 20
+  - maxDistance: 20
     shadowType: 2
     shadowResolution: 2
     debugColor: {r: 1, g: 0, b: 0, a: 0}
-  - minDistance: 20
-    maxDistance: 30
+  - maxDistance: 30
     shadowType: 1
     shadowResolution: 1
     debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
-  - minDistance: 30
-    maxDistance: 40
+  - maxDistance: 40
     shadowType: 0
     shadowResolution: 0
     debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
@@ -2473,19 +2470,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDisableAfterLastLod: 1
+  minDistanceFirstLod: 0
   lightLods:
-  - minDistance: 10
-    maxDistance: 20
+  - maxDistance: 20
     shadowType: 2
     shadowResolution: 2
     debugColor: {r: 1, g: 0, b: 0, a: 0}
-  - minDistance: 20
-    maxDistance: 30
+  - maxDistance: 30
     shadowType: 1
     shadowResolution: 1
     debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
-  - minDistance: 30
-    maxDistance: 40
+  - maxDistance: 40
     shadowType: 0
     shadowResolution: 0
     debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
@@ -2783,19 +2779,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDisableAfterLastLod: 1
+  minDistanceFirstLod: 0
   lightLods:
-  - minDistance: 10
-    maxDistance: 20
+  - maxDistance: 20
     shadowType: 2
     shadowResolution: 2
     debugColor: {r: 1, g: 0, b: 0, a: 0}
-  - minDistance: 20
-    maxDistance: 30
+  - maxDistance: 30
     shadowType: 1
     shadowResolution: 1
     debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
-  - minDistance: 30
-    maxDistance: 40
+  - maxDistance: 40
     shadowType: 0
     shadowResolution: 0
     debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
@@ -3210,19 +3205,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDisableAfterLastLod: 1
+  minDistanceFirstLod: 0
   lightLods:
-  - minDistance: 10
-    maxDistance: 20
+  - maxDistance: 20
     shadowType: 2
     shadowResolution: 2
     debugColor: {r: 1, g: 0, b: 0, a: 0}
-  - minDistance: 20
-    maxDistance: 30
+  - maxDistance: 30
     shadowType: 1
     shadowResolution: 1
     debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
-  - minDistance: 30
-    maxDistance: 40
+  - maxDistance: 40
     shadowType: 0
     shadowResolution: 0
     debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
@@ -3735,19 +3729,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDisableAfterLastLod: 1
+  minDistanceFirstLod: 0
   lightLods:
-  - minDistance: 10
-    maxDistance: 20
+  - maxDistance: 20
     shadowType: 2
     shadowResolution: 2
     debugColor: {r: 1, g: 0, b: 0, a: 0}
-  - minDistance: 20
-    maxDistance: 30
+  - maxDistance: 30
     shadowType: 1
     shadowResolution: 1
     debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
-  - minDistance: 30
-    maxDistance: 40
+  - maxDistance: 40
     shadowType: 0
     shadowResolution: 0
     debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
@@ -3997,19 +3990,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDisableAfterLastLod: 1
+  minDistanceFirstLod: 0
   lightLods:
-  - minDistance: 10
-    maxDistance: 20
+  - maxDistance: 20
     shadowType: 2
     shadowResolution: 2
     debugColor: {r: 1, g: 0, b: 0, a: 0}
-  - minDistance: 20
-    maxDistance: 30
+  - maxDistance: 30
     shadowType: 1
     shadowResolution: 1
     debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
-  - minDistance: 30
-    maxDistance: 40
+  - maxDistance: 40
     shadowType: 0
     shadowResolution: 0
     debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
@@ -4339,19 +4331,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDisableAfterLastLod: 1
+  minDistanceFirstLod: 0
   lightLods:
-  - minDistance: 10
-    maxDistance: 20
+  - maxDistance: 20
     shadowType: 2
     shadowResolution: 2
     debugColor: {r: 1, g: 0, b: 0, a: 0}
-  - minDistance: 20
-    maxDistance: 30
+  - maxDistance: 30
     shadowType: 1
     shadowResolution: 1
     debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
-  - minDistance: 30
-    maxDistance: 40
+  - maxDistance: 40
     shadowType: 0
     shadowResolution: 0
     debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
@@ -4615,19 +4606,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDisableAfterLastLod: 1
+  minDistanceFirstLod: 0
   lightLods:
-  - minDistance: 10
-    maxDistance: 20
+  - maxDistance: 20
     shadowType: 2
     shadowResolution: 2
     debugColor: {r: 1, g: 0, b: 0, a: 0}
-  - minDistance: 20
-    maxDistance: 30
+  - maxDistance: 30
     shadowType: 1
     shadowResolution: 1
     debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
-  - minDistance: 30
-    maxDistance: 40
+  - maxDistance: 40
     shadowType: 0
     shadowResolution: 0
     debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
@@ -4925,19 +4915,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDisableAfterLastLod: 1
+  minDistanceFirstLod: 0
   lightLods:
-  - minDistance: 10
-    maxDistance: 20
+  - maxDistance: 20
     shadowType: 2
     shadowResolution: 2
     debugColor: {r: 1, g: 0, b: 0, a: 0}
-  - minDistance: 20
-    maxDistance: 30
+  - maxDistance: 30
     shadowType: 1
     shadowResolution: 1
     debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
-  - minDistance: 30
-    maxDistance: 40
+  - maxDistance: 40
     shadowType: 0
     shadowResolution: 0
     debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
@@ -5069,19 +5058,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDisableAfterLastLod: 1
+  minDistanceFirstLod: 0
   lightLods:
-  - minDistance: 10
-    maxDistance: 20
+  - maxDistance: 20
     shadowType: 2
     shadowResolution: 2
     debugColor: {r: 1, g: 0, b: 0, a: 0}
-  - minDistance: 20
-    maxDistance: 30
+  - maxDistance: 30
     shadowType: 1
     shadowResolution: 1
     debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
-  - minDistance: 30
-    maxDistance: 40
+  - maxDistance: 40
     shadowType: 0
     shadowResolution: 0
     debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
@@ -5296,19 +5284,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDisableAfterLastLod: 1
+  minDistanceFirstLod: 0
   lightLods:
-  - minDistance: 10
-    maxDistance: 20
+  - maxDistance: 20
     shadowType: 2
     shadowResolution: 2
     debugColor: {r: 1, g: 0, b: 0, a: 0}
-  - minDistance: 20
-    maxDistance: 30
+  - maxDistance: 30
     shadowType: 1
     shadowResolution: 1
     debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
-  - minDistance: 30
-    maxDistance: 40
+  - maxDistance: 40
     shadowType: 0
     shadowResolution: 0
     debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
@@ -5938,19 +5925,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDisableAfterLastLod: 1
+  minDistanceFirstLod: 0
   lightLods:
-  - minDistance: 10
-    maxDistance: 20
+  - maxDistance: 20
     shadowType: 2
     shadowResolution: 2
     debugColor: {r: 1, g: 0, b: 0, a: 0}
-  - minDistance: 20
-    maxDistance: 30
+  - maxDistance: 30
     shadowType: 1
     shadowResolution: 1
     debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
-  - minDistance: 30
-    maxDistance: 40
+  - maxDistance: 40
     shadowType: 0
     shadowResolution: 0
     debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
@@ -6165,19 +6151,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDisableAfterLastLod: 1
+  minDistanceFirstLod: 10
   lightLods:
-  - minDistance: 10
-    maxDistance: 20
+  - maxDistance: 20
     shadowType: 2
-    shadowResolution: 2
+    shadowResolution: 3
     debugColor: {r: 1, g: 0, b: 0, a: 0}
-  - minDistance: 20
-    maxDistance: 30
+  - maxDistance: 30
     shadowType: 1
     shadowResolution: 1
     debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
-  - minDistance: 30
-    maxDistance: 40
+  - maxDistance: 40
     shadowType: 0
     shadowResolution: 0
     debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
@@ -7228,19 +7213,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2151dc0282b4d6192cbd0aa88a06e11, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDisableAfterLastLod: 1
+  minDistanceFirstLod: 0
   lightLods:
-  - minDistance: 10
-    maxDistance: 20
+  - maxDistance: 20
     shadowType: 2
     shadowResolution: 2
     debugColor: {r: 1, g: 0, b: 0, a: 0}
-  - minDistance: 20
-    maxDistance: 30
+  - maxDistance: 30
     shadowType: 1
     shadowResolution: 1
     debugColor: {r: 1, g: 0.8739667, b: 0, a: 0}
-  - minDistance: 30
-    maxDistance: 40
+  - maxDistance: 40
     shadowType: 0
     shadowResolution: 0
     debugColor: {r: 0.060374998, g: 0.5283019, b: 0.02691345, a: 0}
