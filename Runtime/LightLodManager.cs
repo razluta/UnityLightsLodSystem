@@ -76,20 +76,22 @@ namespace UnityLightsLodSystem.Runtime
             {
                 var targetLight = lightLod.GetComponent<Light>();
                 var targetLightTransform = targetLight.transform;
-                if(targetLight.enabled == false) continue;
-
+                if(!targetLight.enabled) continue;
+                
                 var cameraPos = _cameraTransform.position;
                 var targetLightPos = targetLightTransform.position;
+                
+                // Drawing lines
+                Handles.color = targetLight.color;
+                Handles.DrawLine(cameraPos, targetLightPos);
 
+                // Drawing text (for distance)
                 var distance = TransformUtilities.GetDistanceSlow(_cameraTransform, targetLightTransform);
                 Vector3 midpoint = (cameraPos + targetLightPos) / 2.0f;
                 GUIStyle style = new GUIStyle();
                 style.normal.textColor = targetLight.color;
                 style.fontSize = 10;
                 Handles.Label(midpoint + Vector3.up * 0.5f, Mathf.RoundToInt(distance).ToString(), style);
-                
-                Handles.color = targetLight.color;
-                Handles.DrawLine(cameraPos, targetLightPos);
             }
         }
 
