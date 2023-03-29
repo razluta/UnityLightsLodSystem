@@ -1,5 +1,8 @@
+using System;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Profiling;
+using UnityEngine.XR;
 
 namespace UnityLightsLodSystem.Runtime
 {
@@ -39,15 +42,12 @@ namespace UnityLightsLodSystem.Runtime
                 _instance = this;
                 DontDestroyOnLoad(this.gameObject);
             }
-            
-            _lightLods = FindObjectsOfType<LightLod>();
         }
 
         private void Start()
         {
-            _camera = Camera.main;
-            _cameraTransform = _camera.transform;
             _timeElapsed = 0;
+            InitializeLightLodManagerData();
         }
 
         private void Update()
@@ -62,9 +62,33 @@ namespace UnityLightsLodSystem.Runtime
             
             Profiler.EndSample();
         }
+        
+        private void OnDrawGizmos()
+        {
+            InitializeLightLodManagerData();
+            
+            if (_lightLods.Length == 0)
+            {
+                _lightLods = FindObjectsOfType<LightLod>();
+            }
+            
+            foreach (var lightLod in _lightLods)
+            {
+                var targetLight = lightLod.GetComponent<Light>();
+                if(targetLight.enabled == false) continue;
+                
+                Handles.color = targetLight.color;
+                Handles.DrawLine(_cameraTransform.position, lightLod.transform.position);
+            }
+        }
 
         private void UpdateLightOptimizations()
         {
+            if (_camera == null)
+            {
+                InitializeLightLodManagerData();
+            }
+            
             foreach (var lightLod in _lightLods)
             {
                 lightLod.UpdateLightOptimizations(_camera, _cameraTransform);
@@ -73,5 +97,12 @@ namespace UnityLightsLodSystem.Runtime
             _timeElapsed = 0;
         }
 
+        private void InitializeLightLodManagerData()
+        {
+            _lightLods = FindObjectsOfType<LightLod>();
+            
+            _camera = Camera.main;
+            _cameraTransform = _camera.transform;
+        }
     }
 }

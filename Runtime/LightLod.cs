@@ -87,6 +87,11 @@ namespace UnityLightsLodSystem.Runtime
 
         private void Start()
         {
+            InitializeLightLodData();
+        }
+
+        private void InitializeLightLodData()
+        {
             _light = GetComponent<Light>();
             _transform = _light.transform;
             _isLightCulled = false;
@@ -121,6 +126,20 @@ namespace UnityLightsLodSystem.Runtime
                 shadowResolution = _light.shadowResolution,
                 debugColor = _light.color
             };
+        }
+
+        private void OnDrawGizmos()
+        {
+            if (_light == null)
+            {
+                InitializeLightLodData();
+            }
+
+            if (_light.enabled == false) return;
+
+            var lightColor = _light.color;
+            Gizmos.color = new Color(lightColor.r, lightColor.g, lightColor.b, 0.3f);
+            Gizmos.DrawSphere(_transform.position, _lightRangeOfInfluence);
         }
     }
 
