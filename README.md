@@ -15,6 +15,7 @@ The tool has been verified on the following versions of Unity:
 - Ability to set custom LOD values for each light in the scene
 - Supports different types of lights (recommended only for Point and Spot)
 - Easy-to-use user interface and setup
+- In editor visual debugging using gizmos (a sphere for the light range - if applicable and a line from the camera to the light that shows the distance)
 
 *  *  *  *  *
 
