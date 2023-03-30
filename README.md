@@ -8,6 +8,14 @@ The tool has been verified on the following versions of Unity:
 
 *  *  *  *  *
 
+## Branches
+
+- [**main**](https://github.com/razluta/UnityLightsLodSystem/tree/main) = the main active branch of the project, representing the stable main thread approach to the system
+- [**development-singlethreaded**](https://github.com/razluta/UnityLightsLodSystem/tree/development-singlethreaded) = the (sometimes unstable) development branh for the main thread approah to the system
+- [**multithreaded**](https://github.com/razluta/UnityLightsLodSystem/tree/multithreaded) = a (very experimental) Unity Jobs + Burst version of the system - may perform better or worse, depending on your own game performance
+
+*  *  *  *  *
+
 ## Features
 
 - Adjustment of light LOD based on player distance
